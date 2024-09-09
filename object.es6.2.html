@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            
+            function employe(fn,ln){
+                this.firstname=fn
+                this.lastname=ln
+                this.getfullname=function(){
+                    setTimeout(()=>{
+                        console.log(this.firstname+this.lastname)
+
+                    },10000)
+                }
+            }
+                ob1=new employe("srikanth","minde")
+                ob2=new employe("balu" ,"minde")
+                ob3=new employe("yashodha","minde")
+
+                ob1.getfullname()
+                ob2.getfullname()
+                ob3.getfullname()
+
+
+        </script>
+    </body>
+</html>

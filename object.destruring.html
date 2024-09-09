@@ -1,0 +1,86 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            ob1={
+                firstname:"srikanth",
+                lastname:"minde",
+                gender:"male",
+                address:{
+                    place:"kdkl",
+                    pin:"502312",
+                }
+               
+            }
+            var { firstname:fn,age,address:{place:pl},}=ob1
+            console.log(pl)
+
+            ob2={
+                firstname:"srinu",
+                lastname:"kottu",
+                age:23,
+                gender:"male",
+                address:
+                {
+                    place:"kdkl",
+                    pincode:"502312"
+                }
+            }
+            var {firstname:fn,age,gender,address:{pincode:pin}}=ob2
+            console.log(pin)
+
+
+                ob1={
+                    firstname:"srikanth",
+                    lastname:"minde",
+                    age:23,
+                    gender:"male",
+                    corse:"angulare",
+                    address: 
+                    {
+                        pincode:502312,
+                        place:"kdkl",
+                        home:"3-99"
+                    }
+                }
+                var {firstname,age,gender,corse,address:{home:hm,place:pl,pincode:pin}}=ob1
+                console.log(hm,pl,pin)
+
+
+                
+                ob1={
+                    firstname:"srikanth",
+                    lastname:"minde",
+                    age:23,
+                    gender:"male",
+                    corse:"angulare",
+                    address: 
+                    {
+                        pincode:502312,
+                        place:"kdkl",
+                        home:"3-99"
+                    }
+                }
+                var {firstname,age,gender,corse,address:{home:hm}}=ob1
+                console.log(hm)
+
+
+                ob2={
+                    firstname:"akila",
+                    lastname:"sammule",
+                    gender:"male",
+                    corse:"python",
+                    address:
+                    {
+                        place:"hyderbad",
+                        home:"2/52-301",
+                        pincode:"302563"
+                    }
+
+                }
+                var {firstname,gender,corse,address:{home:hm}}=ob2
+                console.log(hm)
+
+        </script>
+    </body>
+</html>

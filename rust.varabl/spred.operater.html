@@ -1,0 +1,132 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var ar=[10,20,30,40,50]
+            var br=[60,70,80,90,100]
+            var cr= [...ar,...br]
+            console.log(cr)
+
+            var br=[1,2,3,4,5,6]
+            var xr=[7,8,9,10,11,21,33,44,55,66]
+            var dr=[...br,...xr]
+            console.log(dr)
+
+            var xr=[10,20,30,40,50,60,70,80]
+            var zr=[10,14,17,81,90,80,77,94,100]
+            var cr=[...xr,...zr]
+            console.log(cr)
+
+
+            var er=[10,20,30,40,60,50,40,10000]
+            var rr=[4,50,60,140,80,70,8,2]
+            var xx=[...er,...rr]
+            console.log(xx)
+
+            var ar=[10,10,20,30,40,50,60]
+            var br=[12,13,14,15,66,98,100]
+            var z=[...ar,...br]
+            console.log(z)
+
+
+            var ar=[10,20,30,40]
+            var br=[50,60,70,80,90,100]
+            var ar=[...ar,...br]
+            console.log(ar)
+
+
+            var ar=[10,20]
+            var b=[44]
+            var dr=[...ar,...b]
+            console.log(dr)
+
+            ob1={
+                firstname:"archu",
+                lastname:"minde",
+               
+            }
+            ob2={
+              
+                age:"20",
+                gender:"female",
+            }
+            var ob3 ={...ob1,...ob2}
+            console.log(ob3)
+
+
+            ob1={
+                firstname:"ram",
+                lastname:"gopi",
+
+            }
+            ob3={
+                gender:"female",
+                home_number:"3-99/70/56/100",
+                corses:"python,java,angulare,react"
+            }
+            ob5={ ...ob1,...ob3}
+            console.log(ob5)
+
+
+            ob1={
+                lastname:"bammardhi",
+                gender:"male",
+            }
+            ob3={
+                place:"kodakandla",
+                home_number:"90/70/79432"
+
+            }
+            ob5={ ...ob1,...ob3}
+            console.log(ob5)   
+            
+            ob1={
+                firstname:"srikanth",
+                food:"biryani"
+            }
+            ob2={
+                lastname:"minde",
+                food:"pappu"
+            }   
+            ob6={ ...ob2,...ob1}
+            console.log(ob6)
+
+            ob6={...ob1,...ob2}
+            console.log(ob6)
+
+
+            ob1={ firstname:"srikanth",
+                age:23,
+            }
+            ob1.age=20
+            console.log(ob1)
+
+            
+
+            ob1={ firstname:"srikanth",
+                age:23,
+            }
+                
+            Object.freeze(ob1)
+            ob1.age=20
+            console.log(ob1)
+
+
+
+            
+            
+            var ar=[10,20,30,40]
+            ar[1]=99
+            console.log(ar)
+
+
+            var ar=[10,20,30,40]
+            Object .freeze(ar)
+            //ar[1]=99
+            ar=[...ar,100]
+            console.log(ar)
+
+
+       </script>
+    </body>
+</html>

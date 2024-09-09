@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            ob1={
+                firstname:"srikanth",
+                lastname:"minde",
+                age:"23"
+            }
+            var {firstname,...w}=ob1
+            console.log(w)
+
+
+            ob2={
+                lastname:"minde",
+                age:"23",
+                pin:50232,
+                home:"3-99"
+            }
+            var { home,...o}=ob2
+            console.log(o)
+
+            ob2={
+               age:"40",
+               home:"897521012",
+               corse:"python,angulare,"
+
+            }
+            var { age,...o}=ob2
+            console.log(o)
+
+
+            ob2={
+                gender:"male",
+                home:"457895585",
+                corse:"java",
+                contact:"9705377176"
+            }
+            var { gender,...p}=ob2
+            console.log(p)
+        </script>
+    </body>
+</html>
